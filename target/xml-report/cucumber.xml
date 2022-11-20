@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.187">
-    <testcase classname="US1011 Automation Practice Kullanici Olusturma Testi" name="TC18 Kullanici yeni kullanici olusturabilmeli" time="16.817">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.504">
+    <testcase classname="JDBC kullanarak yeterli bilgi ile database testi yapilabilir" name="JDBC01 kullanici database'de sorgu yapabilmeli" time="2.301">
         <system-out>
-            <![CDATA[Given Kullanici "automationUrl" anasayfaya gider............................passed
-And user signUp linkine tiklar..............................................passed
-And New user bölümüne name ve email adresi girer............................passed
-And SignUp butonuna basar...................................................passed
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
-And user create account butonuna basar......................................passed
-Then hesap olustugunu dogrulayin............................................passed
+            <![CDATA[Given Kullanici JDBC ile database'e baglanir................................passed
+Then users tablosundaki isim verilerini alir................................passed
+And isim verilerini test eder...............................................passed
 ]]>
         </system-out>
     </testcase>

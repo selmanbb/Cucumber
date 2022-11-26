@@ -1,19 +1,22 @@
 
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin={"html:target/cucumber-reports.html",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+        plugin={"html:target/cucumber-reports1.html",
+                "json:target/json-reports/cucumber1.json",
+                "junit:target/xml-report/cucumber1.xml"
         },
         features = "src/test/resources/features",
         glue="stepdefinitions",
-        tags= "@pt1",
+        tags= "@show",
         dryRun = false
 )
+
 public class TestRunner1 {
     /*
     Bir framework'de bir tek Runner class'i yeterli olabilir
@@ -26,9 +29,9 @@ public class TestRunner1 {
     tags : o an hangi tag'i calistirmak istiyorsak onu belli eder
    dryRun : iki secenek var
    dryRun=true; yazdigimizda Testimizi calistirmadan sadece eksik adimlari bize verir
-                eksik adim yoksa testi calistirmadan test pass yazar
-   deyRun=false yazdigimizda testlerimizi calistirir
-                eksik adim varsa ilk eksik adimda calismayi durdurur ve
+                eksik adim yoksa, testi calistirmadan test passed yazar
+   dryRun=false yazdigimizda testlerimizi calistirir
+                eksik adim varsa, ilk eksik adimda calismayi durdurur ve
                 eksik adimlari bize verir
      */
 }
